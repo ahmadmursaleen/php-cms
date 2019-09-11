@@ -9,8 +9,12 @@
     elseif ($test = 'redirect'){
         redirect_to(url_for('/staff/subjects/index.php'));
     }
-    else{
-        echo 'No error';
-    }
-
 ?>
+
+<?php $page_title='Create Subject';?>
+<?php include(SHARED_PATH . '/staff_header.php')?>
+
+<div id="content">
+<a class="back-link" href="<?php echo url_for('/staff/subjects/index.php')?>">Back to the List</a>
+
+</div>
